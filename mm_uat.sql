@@ -7,22 +7,11 @@ with event_pairs as (
 		e.id,
 		e.provider_id,
 		case 
-	        when e.provider_id = 'c20e08cf-8488-46a6-a66c-5d8fb827f7e0' then 'JUMP'
-	        when e.provider_id = '63f13c48-34ff-49d2-aca7-cf6a5b6171c3' then 'Lime'
-	        when e.provider_id = '2411d395-04f2-47c9-ab66-d09e9e3c3251' then 'Bird'
-	        when e.provider_id = '6ddcc0ad-1d66-4046-bba4-d1d96bb8ca4d' then 'Razor'
-	        when e.provider_id = 'e714f168-ce56-4b41-81b7-0b6a4bd26128' then 'Lyft'
-	        when e.provider_id = 'd73fcf80-22b1-450f-b535-042b4e30aac7' then 'Skip'
-	        when e.provider_id = '2e4cb206-b475-4a9d-80fb-0880c9a033e0' then 'HOPR'
-	        when e.provider_id = 'b79f8687-526d-4ae6-80bf-89b4c44dc071' then 'Wheels'
-	        when e.provider_id = '70aa475d-1fcd-4504-b69c-2eeb2107f7be' then 'Spin'
+	        when e.provider_id = '6ddcc0ad-1d66-4046-bba4-d1d96bb8ca4f' then 'Razor'
+	        when e.provider_id = '2e4cb206-b475-4a9d-80fb-0880c9a033e1' then 'HOPR'
 	        when e.provider_id = 'd56d2df6-fa92-43de-ab61-92c3a84acd7d' then 'WIND'
 	        when e.provider_id = '264aad41-b47c-415d-8585-0208d436516e' then 'Tier'
-	        when e.provider_id = 'bf95148b-d1d1-464e-a140-6d2563ac43d4' then 'Cloud'
-	        when e.provider_id = 'f3c5a65d-fd85-463e-9564-fc95ea473f7d' then 'BlueLA'     
-	        when e.provider_id = '3291c288-c9c8-42f1-bc3e-8502b077cd7f' then 'Bolt'     
-	        when e.provider_id = 'daecbe87-a9f2-4a5a-b5df-8e3e14180513' then 'CLEVR'    
-	        when e.provider_id = '3c95765d-4da6-41c6-b61e-1954472ec6c9' then 'Sherpa'    
+	        when e.provider_id = 'bf95148b-d1d1-464e-a140-6d2563ac43d4' then 'Cloud'    
 	    	else 'unknown'
 		end as provider_name,
 		e.device_id,
